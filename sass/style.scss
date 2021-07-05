@@ -1,0 +1,199 @@
+@import '_var';
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style:none;
+}
+img{
+    width:100%;
+}
+.padding-section{
+    padding:150px 0px;
+}
+.row-padding{
+    padding:48px 0px;
+}
+
+// HEADER SECTION CSS START HERE
+
+header{
+    background-color: $bg-color1;
+    padding:40px 0px;
+    .logo{
+        line-height: 110px;
+        align-items: center;
+        img{
+            max-width:170px;
+        }
+    }
+    .navbar{
+        line-height: 80px;
+        align-items: center;
+        .nav-item{
+            margin-right:40px;
+        }
+        .nav-link{
+            color:$primary-color;
+            font-weight: 500;
+            font-size: 22px;
+            font-family: $main-font;
+            position:relative;
+
+        }
+        .nav-link::after{
+            content:'';
+            position:absolute;
+            height: 3px;
+            width:0%;
+            background-color: crimson;
+            left:0;
+            bottom:0;
+            top:70px;
+            transition: $transition;
+        }
+        .nav-link:hover:after{
+            width:100%;
+        }
+    }
+    .hero-section{
+        .hero-section-details{
+            
+            text-align: justify;
+            h1{
+                font-size:$title;
+                font-family: $main-font;
+                color:$primary-color;
+            }
+            p{
+                font-size: $para;
+                font-family: $sub-font;
+                color:$secendory-color;
+            }
+            .icon li {
+                font-size:50px;
+                margin-right:40px;
+            }
+        }
+        .hero-img{
+            max-width: 350px;
+            padding-left:70px;
+        }
+
+    }
+}
+
+// HEADER SECTION CSS END HERE
+
+// FEATURES SECTION CSS START HERE
+
+.features{
+    .features-title{
+        h1{
+            font-size: $title;
+            color: $primary-color;
+            font-weight: 600;
+            font-family: $main-font;
+        }
+        p{
+            font-size: $para;
+            font-family: $sub-font;
+        }
+    }
+    .grid{
+        padding:10px;
+        text-align: center;
+        margin-top:15px;
+        box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.3);
+        cursor: pointer;
+        transition: $transition;
+        .icon{
+            font-size:40px;
+        }
+    }
+    .grid:hover{
+        transform: scale(1.05);
+    }
+    .grid:hover .icon{
+        color:$bg-color1;
+    }
+}
+// ---================TOUCH SECTION CSS
+
+.touch-section{
+    background-color: $primary-color;
+    padding:20px 0px;
+    .touc-title{
+        h1{
+            color: $bg-color1;
+            font-weight: 500;
+            font-size: $title;
+            font-family:  $main-font;
+        }
+        p{
+            color: $secendory-color;
+            font-size: $para;
+            font-family:  $sub-font;
+        }
+    }
+
+    .email-input{
+       width:290px;
+       padding:10px;
+       outline: none;
+   }
+   .btn{
+       padding:8px;
+       background-color: $bg-color1;
+       margin-left:10px;
+       font-size:$sub-title;
+   }
+
+//    Social link
+
+   .social-link{
+       li{
+           margin-right:10px;
+        
+           a{
+               font-size:35px;
+               text-decoration: none;
+               color: $primary-color;
+               background-color:  $bg-color1;
+               padding: 10px;
+               border-radius: 8px;
+               transition: $transition;
+               
+           }
+           a:hover{
+               color: $bg-color2;
+           }
+       }
+   }
+
+//    this is footer css
+
+   .footer{
+       .footer-addrs{
+           h4{
+            color: $bg-color2;
+            font-size: 16px;
+            font-weight: 300;
+           }
+           p{
+               color: $bg-color2;
+               font-weight: 300;
+               font-size:13px;
+           }
+       }
+       .grid{
+           margin-top:10px;
+           li a{
+               text-decoration: none;
+               color: $bg-color2;
+
+           }
+       }
+   }
+}
